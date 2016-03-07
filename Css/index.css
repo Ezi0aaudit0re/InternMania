@@ -96,6 +96,11 @@ nav a
 	font-size: 20px;
 }
 
+.logout
+{
+	margin-left: 30%;
+}
+
 .add_internship div h3
 {
 	font-family: 'Abril Fatface', cursive;
@@ -200,7 +205,8 @@ nav a
 .sectOne
 {
 	background-image: url("../images/image1.jpg");
-	position: relative;
+	opacity: 0.9;
+	/*position: relative;*/
 }
 
 .sectTwo
@@ -224,7 +230,7 @@ nav a
 	width: 60%;
 	font-family: 'Delicious', cursive;
 	font-size: 28px;
-	font-style: italic;
+	font-style: bold;
 	color: white;
 	border-radius: 20px;
 

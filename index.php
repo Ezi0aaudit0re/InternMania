@@ -11,7 +11,7 @@
 <body>
 	<nav>
 		<div>
-			<a href="../index.php"><span class="glyphicon glyphicon-home">&nbsp;</span>Home</a> | <a href="./views/main.php">Internships</a> | <a href="./views/add_internship.php">Post Internships</a><a href="./views/prospectives.php">View Prospectives</a> | <a href="./Validations/logoff.php" class="logout"><span class="glyphicon glyphicon-off">&nbsp;</span>Logout</a>
+			<a href="../index.php"><span class="glyphicon glyphicon-home">&nbsp;</span>Home</a> | <a href="./views/main.php">Internships</a> | <a href="./views/add_internship.php">Post Internships</a><a href="./views/prospectives.php">View Prospectives</a> |&nbsp;&nbsp;&nbsp;&nbsp; <a href="./Validations/logoff.php" class="logout"><span class="glyphicon glyphicon-off">&nbsp;</span>Logout</a>
 		</div>
 	</nav>	
 
