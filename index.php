@@ -11,7 +11,7 @@
 <body>
 	<nav>
 		<div>
-			<a href="../index.php"><span class="glyphicon glyphicon-home">&nbsp;</span>Home</a> | <a href="./views/main.php">Internships</a> | <a href="./views/add_internship.php">Post Internships</a><a href="./views/prospectives.php">View Prospectives</a> |&nbsp;&nbsp;&nbsp;&nbsp; <a href="./Validations/logoff.php" class="logout"><span class="glyphicon glyphicon-off">&nbsp;</span>Logout</a>
+			<a href="../index.php"><span class="glyphicon glyphicon-home">&nbsp;</span>Home</a> | <a href="./views/main.php">Internships</a> | <a href="./views/add_internship.php">Post Internships</a><a href="./views/prospectives.php">View Prospectives</a> | <a href="./views/LandR.php" class="logout"><span class="glyphicon glyphicon-off">&nbsp;</span>LogIn</a>
 		</div>
 	</nav>	
 
@@ -30,7 +30,7 @@
 				<p>I am not able to upload all my projects online but the codes for these projects are availabe on my <a href="https://github.com/Ezi0aaudit0re">GITHUB</a></p>
 			</div>
 			<div class="col-md-3 pull-left about">
-				<img src="./images/profile.png" alt="About logo" height="320" width="190">
+				<img src="./images/profile.png" alt="About logo" height="300" width="260">
 			</div>
 		</div>
 	</div>

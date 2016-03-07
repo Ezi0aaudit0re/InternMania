@@ -20,7 +20,7 @@
 	// Gets the internships a person has applied for
 	function getInternships()
 	{
-		$query = "SELECT * FROM postings LEFT JOIN users ON users.id = postings.user_id";
+		$query = "SELECT * FROM postings LEFT JOIN users ON users.id = postings.user_id ORDER BY postings.created_at DESC;";
 		return fetch($query);
 	}
 
@@ -29,7 +29,8 @@
 	{
 		$query = "SELECT * FROM users LEFT JOIN internships ON users.id = internships.user_id
 					LEFT JOIN postings ON postings.id = internships.posting_id
-					WHERE postings.user_id = {$_SESSION["id"]}"; 
+					WHERE postings.user_id = {$_SESSION["id"]}
+					ORDER BY internships.applied_at DESC"; 
 		return fetch($query);
 	}
 ?>

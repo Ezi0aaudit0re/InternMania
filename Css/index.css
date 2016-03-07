@@ -71,7 +71,7 @@ textarea
 	padding: 5px;
 	margin: 10px;
 	box-shadow: 10px 0px 5px #888888;
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(255, 255, 255, 0.7);
 	text-align: center;
 }
 
@@ -118,9 +118,17 @@ nav a
 	margin: 0 230px;
 }
 
-.main_page, .application_main
+.main_page
 {
 	background-image: url("../images/main.jpg");
+	background-size: cover;
+	overflow: hidden;
+	background-attachment: fixed;
+}
+
+.application_main
+{
+	background-image: url("../images/prospective.jpeg");
 	background-size: cover;
 	overflow: hidden;
 	background-attachment: fixed;

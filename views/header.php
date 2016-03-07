@@ -1,3 +1,14 @@
+
+<?php
+	// Check if a user needs to login or Logout
+	if(!isset($_SESSION["type"]) && !isset($_SESSION["id"]))
+	{
+		$_SESSION["event"] = "LogIn";
+	}
+	else
+		$_SESSION["event"] = "Logout";
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +21,6 @@
 <body>
 	<nav>
 		<div>
-			<a href="../index.php"><span class="glyphicon glyphicon-home">&nbsp;</span>Home</a> | <a href="./main.php">Internships</a> | <a href="./add_internship.php">Post Internships</a><a href="./prospectives.php">View Prospectives</a> | <a href="../Validations/logoff.php" class="logout"><span class="glyphicon glyphicon-off">&nbsp;</span>Logout</a>
+			<a href="../index.php"><span class="glyphicon glyphicon-home">&nbsp;</span>Home</a> | <a href="./main.php">Internships</a> | <a href="./add_internship.php">Post Internships</a><a href="./prospectives.php">View Prospectives</a> | <a href="../Validations/logoff.php" class="logout"><span class="glyphicon glyphicon-off">&nbsp;</span><?=$_SESSION["event"];?></a>
 		</div>
 	</nav>	

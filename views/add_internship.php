@@ -4,13 +4,15 @@
 	//check if user has logged in
 	if(!isset($_SESSION["id"]) && !isset($_SESSION["name"]))
 	{
+
 		$_SESSION["message"] = "You need to be logged in to post internships";
-		header("Location: ../views/LandR.php");
+		header("Location: ./LandR.php");
+		die();
 	}	
 	else if($_SESSION["type"] == "Student")
 	{
-		$_SESSION["message"] = "Only employers can post internships"
-		header("Location: ../views/main.php");
+		$_SESSION["message"] = "Only employers can post internships";
+		header("Location: ./main.php");
 	}
 		
 
@@ -19,10 +21,6 @@
 
 
 	<div class="container add_internship">
-		<div class="row">
-
-			<h3><?=$_SESSION["name"];?>, add information about new internship</h3>
-		</div>
 			
 			<?php
 				if(isset($_SESSION["message"]))
